@@ -22,6 +22,7 @@ mcgovernvote.addEventListener("mouseout", appear)
 
 
 // On Load
+
 function loadEvent() {
     alert("Welcome, choose wisely");
 }
