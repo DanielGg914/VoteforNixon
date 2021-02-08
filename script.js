@@ -22,10 +22,10 @@ mcgovernvote.addEventListener("mouseout", appear)
 
 
 // On Load
-// Not Working
-document.getElementById("nixon").addEventListener("load", function() {
-    alert("On Load");
-});
+function loadEvent() {
+    alert("Welcome, choose wisely");
+}
+
 
 
 // On context menu
