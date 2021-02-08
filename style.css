@@ -1,0 +1,214 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+}
+
+/* Typography */
+
+h1, h1, h3, h4, h5, h6 {
+    font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Nav Bar Styles */
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #7f2c40;
+    height: 75px;
+    position: fixed;
+    width: 100%;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: black;
+}
+
+/* Header */
+
+header {
+    padding-top: 50px;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    justify-content: flex-start;
+}
+
+header h1 {
+    font-size: 100px;
+    margin: 0 auto;
+}
+
+/* Footer Layout */
+
+
+
+/* Footer Layout */
+
+
+/* Body styles */
+
+.nixon {
+    border: #7f2c40 10px solid;
+    float: right;
+
+}
+
+.nixonvote{
+    background-color: firebrick;
+    margin: 10px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.mcgovern {
+    border: #30416d 10px solid;
+    float: left;
+
+}
+
+.mcgovernvote {
+    background-color: dodgerblue;
+    margin: 10px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+
+/* Footer Layout */
+
+
+/* Option styles */
+
+main {
+    margin-top: 50px;
+    margin: 125px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* article styles */
+
+article p {
+    padding: 10px;
+}
+
+article h3 {
+    margin: 0 auto;
+    font-size: 25px;
+    width: fit-content;
+    margin-bottom: 5px;
+}
+
+article {
+    width: 80%;
+    margin: 10px auto;
+    padding: 20px;
+    cursor: url(nixoncursor.png), pointer;
+}
+
+.voteBar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #30416d;
+    height: 75px;
+    width: 100%;
+    position: fixed;
+    margin-top: 75px;
+    text-align: center;
+}
+
+.informationbar{
+    background-color: rgba(128, 128, 128, 0.199);
+    padding-top: 200px;
+    padding-bottom: 125px;
+    text-align: center;
+}
+
+
+
+
+
+/* https://css-tricks.com/controlling-css-animations-transitions-javascript/#:~:text=To%20trigger%20an%20element's%20transition,those%20values%20you%20just%20got. */
+/* This code is via CSS tricks */
+
+.spiralContainer {
+    border-radius: 50%;
+    width:200px;
+    height:200px;
+    overflow:hidden;
+    margin:auto;
+    
+    -webkit-animation: spin 3s linear 0s infinite reverse;
+    -moz-animation: spin 3s linear 0s infinite reverse;  
+    -ms-animation: spin 3s linear 0s infinite reverse;
+    -o-animation: spin 3s linear 0s infinite reverse;
+    animation: spin 3s linear 0s infinite reverse;
+    
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -ms-animation-play-state: paused;
+    -o-animation-play-state: paused;  
+    animation-play-state: paused;
+}
+.spiral {
+    width:200px;
+    height:200px;
+    border-radius: 50%;
+    background-image: url(nixonsmall.png);
+    background-repeat:no-repeat;
+    background-position:50% 50%;
+    
+    
+    -webkit-animation: spin 6s linear 0s infinite normal;
+    -moz-animation: spin 6s linear 0s infinite normal;
+    -ms-animation: spin 6s linear 0s infinite normal;
+    -o-animation: spin 6s linear 0s infinite normal;
+    animation: spin 6s linear 0s infinite normal;
+}
+.spiralContainer:hover {
+    -webkit-animation-play-state: running;
+    -moz-animation-play-state: running;
+    -ms-animation-play-state: running;
+    -o-animation-play-state: running;
+    animation-play-state: running;
+}
+@keyframes spin {
+    0% { transform: rotate(360deg); }
+    100% { transform: rotate(0deg); }
+}
+@-webkit-keyframes spin {
+    0% {-webkit-transform: rotate(360deg); }
+    100% { -webkit-transform: rotate(0deg); }
+}
+@-ms-keyframes spin {
+    0% {-ms-transform: rotate(360deg); }
+    100% { -ms-transform: rotate(0deg); }
+}
+@-moz-keyframes spin {
+    0% { -moz-transform: rotate(360deg); }
+    100% { -moz-transform: rotate(0deg); }
+}
+@-o-keyframes spin {
+    0% { -o-transform: rotate(360deg); }
+    100% { -o-transform: rotate(0deg); }
+}
+
+/* https://css-tricks.com/controlling-css-animations-transitions-javascript/#:~:text=To%20trigger%20an%20element's%20transition,those%20values%20you%20just%20got. */
+/* This code is via CSS tricks */

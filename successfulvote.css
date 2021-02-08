@@ -1,0 +1,48 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgb(235, 235, 235);
+}
+
+.pop-up {
+    position:absolute;
+    width:25%;
+    height:50%;
+    top:25%;
+    left:35%;
+    text-align:center;
+    border-radius: 10px;
+    background:rgb(240,240,240);
+    box-shadow: 0px 1.5px 3px .5px black;
+    border: #ca2149 1px solid;
+    animation-name: pop-up;
+    animation-duration: 2s;
+}
+
+h1 {
+    color: limegreen;
+    font-size: 4rem;
+}
+
+p {
+    color: limegreen;
+    font-size: 1rem;
+}
+
+@keyframes pop-up{
+    0%{
+    transform: scale(.1);
+    }
+    50%{
+    transform: scale(1.4);
+    }
+    100%{
+    transform: scale(1);
+    }
+}
